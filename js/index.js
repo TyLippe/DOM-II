@@ -39,12 +39,14 @@ loadMessage.addEventListener('load', event => {
     console.log('The Images Have Loaded')
 })
 
-// Trying to get all anchors to change
-// const focusUp = document.querySelectorAll('.nav a')
-// const focusNav = Array.from(focusUp)
 
-// focusNav.addEventListener('focus', event => {
-//     focusNav.forEach(object => object.style.color = '#FDBA4A')
+//Trying to get all anchors to change
+// const focusUp = document.querySelectorAll('nav')
+// const focusNav = Array.from(focusUp)
+// console.log(focusNav)
+
+// focusUp.addEventListener('focus', event => {
+//     focusUp.forEach(object => object.style.color = '#FDBA4A')
 //     console.log(event)
 // })
 
@@ -77,4 +79,14 @@ const doubleClick = document.querySelector('img')
 doubleClick.addEventListener('dblclick', event => {
     doubleClick.remove()
     console.log(event)
+})
+
+const footBG = document.querySelector('footer')
+footBG.addEventListener('click', event => {
+    if (footBG.style.background === 'white') {
+        footBG.style.background = '#FDBA4A'
+    }
+    else {
+    footBG.style.background = 'white'
+    }
 })
